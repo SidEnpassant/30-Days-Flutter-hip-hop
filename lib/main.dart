@@ -131,6 +131,7 @@ import 'package:testapp/provider_state_management/provider/theme_changer_provide
 import 'package:testapp/provider_state_management/screens/count_example.dart';
 import 'package:testapp/provider_state_management/screens/dark_theme.dart';
 import 'package:testapp/provider_state_management/screens/favourite/favourite_screen.dart';
+import 'package:testapp/provider_state_management/screens/value_notify_listener.dart';
 import 'package:testapp/provider_state_management/why_provider.dart';
 import 'package:testapp/provider_state_management/screens/example_one.dart';
 
@@ -175,7 +176,7 @@ class MyApp extends StatelessWidget {
               color: Colors.pink,
             )
           ),
-         home: DarkThemeScreen(),
+         home: NotifyListenerScreen(),
         );
       })
     );
