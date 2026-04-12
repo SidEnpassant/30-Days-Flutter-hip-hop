@@ -188,6 +188,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:testapp/homePage.dart';
+import 'package:testapp/rest_api/example_three.dart';
+import 'package:testapp/rest_api/example_two.dart';
 
 import 'rest_api/home_screen.dart';
 
@@ -207,12 +209,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: HomeScreenRestApi(),
+      home: ExampleThree(),
     );
   }
 }
-
-
-
-
-
