@@ -188,11 +188,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:testapp/homePage.dart';
-import 'package:testapp/rest_api/example_four.dart';
-import 'package:testapp/rest_api/example_three.dart';
-import 'package:testapp/rest_api/example_two.dart';
+import 'package:testapp/rest_api_get/example_four.dart';
+import 'package:testapp/rest_api_get/example_three.dart';
+import 'package:testapp/rest_api_get/example_two.dart';
 
-import 'rest_api/home_screen.dart';
+import 'rest_api_get/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -210,7 +210,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: ExampleFour(),
+      home: ExampleThree(),
     );
   }
 }
