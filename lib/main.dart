@@ -185,15 +185,44 @@
 //   }
 // }
 
+//
+// import 'package:flutter/material.dart';
+// import 'package:testapp/homePage.dart';
+// import 'package:testapp/rest_api_get/example_four.dart';
+// import 'package:testapp/rest_api_get/example_three.dart';
+// import 'package:testapp/rest_api_get/example_two.dart';
+// import 'package:testapp/rest_api_post/signup.dart';
+//
+// import 'rest_api_get/home_screen.dart';
+//
+// void main() {
+//   runApp(const MyApp());
+// }
+//
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+//
+//   // This widget is the root of your application.
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       title: 'Flutter Demo',
+//       theme: ThemeData(
+//         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+//       ),
+//       home: SignUpScreen(),
+//     );
+//   }
+// }
+
+
+// --------------- BLOCK STATE MANAGEMENT ------------ /////
 
 import 'package:flutter/material.dart';
-import 'package:testapp/homePage.dart';
-import 'package:testapp/rest_api_get/example_four.dart';
-import 'package:testapp/rest_api_get/example_three.dart';
-import 'package:testapp/rest_api_get/example_two.dart';
-import 'package:testapp/rest_api_post/signup.dart';
+import 'bloc_state_management/bloc_explore/ui/counter_screen.dart';
+import 'bloc_state_management/equatable_testing.dart';
 
-import 'rest_api_get/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -211,7 +240,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: SignUpScreen(),
+      home: CounterScreen(),
     );
   }
 }

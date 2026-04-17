@@ -1,0 +1,2 @@
+oops is techniques to create objects and applications/softwares built using interaction of those 
+objects , concepts used in creating those objects is oops
