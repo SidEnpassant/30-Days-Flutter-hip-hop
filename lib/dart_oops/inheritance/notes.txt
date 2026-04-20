@@ -28,4 +28,6 @@ Key Concepts of Inheritance in Dart
    Ο Private members (declared with a leading underscore) are not accessible outside the file they are declared in.
 4. Overriding Methods:
    Ο Subclasses can override methods of the superclass to provide specific implementations using the @overrideannotation
-
+5. Constructors:
+   Ο Constructors of the superclass are not inherited by the subclass , but the subclass can call the superclass
+   constructor using the super keyword.
