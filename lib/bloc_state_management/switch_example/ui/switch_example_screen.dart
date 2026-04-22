@@ -30,7 +30,9 @@ class _SwitchExampleScreenState extends State<SwitchExampleScreen> {
                 children: [
                   const Text('Notifications'),
                   BlocBuilder<SwitchBloc , SwitchStates>(
+                    buildWhen: (previous , current) => previous.isSwitch != current.isSwitch,
                       builder: (context , state){
+                        print('NOTIFICATION BUTTON BUILD');
                         return Switch(value: state.isSwitch, onChanged: (newValue){
                           print(newValue);
                           context.read<SwitchBloc>().add(EnableOrDisableNotification());
@@ -45,7 +47,9 @@ class _SwitchExampleScreenState extends State<SwitchExampleScreen> {
               ),
 
               BlocBuilder<SwitchBloc , SwitchStates>(
+                  buildWhen: (previous , current) => previous.slider != current.slider,
                   builder: (context , state){
+                    print('Slider build');
                     return Container(
                       height: 200,
                       color: Colors.red.withOpacity(state.slider),
@@ -57,6 +61,7 @@ class _SwitchExampleScreenState extends State<SwitchExampleScreen> {
               const SizedBox(height: 50,),
 
               BlocBuilder<SwitchBloc , SwitchStates>(
+                  buildWhen: (previous , current) => previous.slider != current.slider,
                   builder: (context , state){
                     return Slider(
                         value: state.slider,
