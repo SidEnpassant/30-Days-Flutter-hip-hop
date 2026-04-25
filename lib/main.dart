@@ -250,9 +250,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(
-          create: (_) => CounterBloc(),
-        ),
+        // BlocProvider(
+        //   create: (_) => CounterBloc(),
+        // ),
+        /// SHOULD NOT GLOBALLY USE BLOC AS THAT IS NOT BEST PRACTICE USE LIKE USING COUNTER BLOC FOR COUNTER SCREEN
         BlocProvider(
           create: (context) => SwitchBloc(),
         ),
@@ -278,7 +279,7 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
         ),
         //home: CounterScreen(),
-        home: PostsScreen(),
+        home: CounterScreen(),
       ),
     );
   }

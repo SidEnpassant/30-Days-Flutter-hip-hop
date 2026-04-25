@@ -4,6 +4,8 @@ import 'package:testapp/bloc_state_management/posts_app/bloc/posts_event.dart';
 import 'package:testapp/bloc_state_management/posts_app/bloc/posts_state.dart';
 import 'package:testapp/bloc_state_management/posts_app/utils/enums.dart';
 
+import '../../bloc_explore_counter/bloc/counter/counter_bloc.dart';
+import '../../bloc_explore_counter/bloc/counter/counter_state.dart';
 import '../bloc/posts_bloc.dart';
 
 
@@ -27,6 +29,7 @@ class _PostsScreenState extends State<PostsScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Posts API'),
+
       ),
       body: BlocBuilder<PostBloc , PostStates>(
           builder: (context , state){
