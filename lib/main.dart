@@ -230,6 +230,7 @@ import 'bloc_state_management/equatable_testing.dart';
 import 'bloc_state_management/favourite_app/bloc/favourite_app_bloc.dart';
 import 'bloc_state_management/favourite_app/repository/favourite_repository.dart';
 import 'bloc_state_management/favourite_app/ui/favourite_app_screen.dart';
+import 'bloc_state_management/freezed_tutorial/code/home_screen.dart';
 import 'bloc_state_management/image_picker/ui/image_picker_screen.dart';
 import 'bloc_state_management/login_signup_bloc/login/ui/login_screen.dart';
 import 'bloc_state_management/posts_app/bloc/posts_bloc.dart';
@@ -275,12 +276,12 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
-          brightness: Brightness.dark,
+          //brightness: Brightness.dark,
           // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
         //home: CounterScreen(),
-        home: LoginScreen(),
+        home: HomeScreen(),
       ),
     );
   }
