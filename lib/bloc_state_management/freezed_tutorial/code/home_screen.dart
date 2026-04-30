@@ -15,11 +15,11 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
 
 
-  List<PersonModel> personList = [
-    PersonModel(name: null),
-    PersonModel(name: 'Sid'),
-    PersonModel(name: 'Sid')
-  ];
+  // List<PersonModel> personList = [
+  //   PersonModel(name: null),
+  //   PersonModel(name: 'Sid'),
+  //   PersonModel(name: 'Sid')
+  // ];
 
   @override
   void initState() {
@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
 
     for(int i = 0 ; i < data.length ; i++){
-      personList.add(PersonModel.fromJson(data[i]));
+      //personList.add(PersonModel.fromJson(data[i]));
     }
   }
 
@@ -48,10 +48,10 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView.builder(
-        itemCount: personList.length,
+       // itemCount: personList.length,
           itemBuilder: (context , index){
             return ListTile(
-              title: Text(personList[index].name ?? ''),
+              //title: Text(personList[index].name ?? ''),
             );
           }
       ),
@@ -64,11 +64,11 @@ class _HomeScreenState extends State<HomeScreen> {
               'name': null
             };
 
-            PersonModel model = PersonModel.fromJson(data);
-            print(model.name);
+            // PersonModel model = PersonModel.fromJson(data);
+            // print(model.name);
 
-            model = model.copyWith(name: 'NEW SAKA');
-            print(model.name.toString());
+            // model = model.copyWith(name: 'NEW SAKA');
+            // print(model.name.toString());
             
             // print(personModel1 == personModel);
             // print(personModel.hashCode.toString());
